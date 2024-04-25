@@ -1,0 +1,103 @@
+[debug] [2024-04-25T11:13:28.467Z] ----------------------------------------------------------------------
+[debug] [2024-04-25T11:13:28.468Z] Command:       /usr/local/bin/node /Users/kongfha/Desktop/SE/GitHubActionPractice/node_modules/.bin/firebase init hosting
+[debug] [2024-04-25T11:13:28.469Z] CLI Version:   13.7.4
+[debug] [2024-04-25T11:13:28.469Z] Platform:      darwin
+[debug] [2024-04-25T11:13:28.469Z] Node Version:  v18.16.0
+[debug] [2024-04-25T11:13:28.470Z] Time:          Thu Apr 25 2024 18:13:28 GMT+0700 (Indochina Time)
+[debug] [2024-04-25T11:13:28.470Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-25T11:13:28.519Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-25T11:13:28.520Z] > authorizing via signed-in user (123459876azaz@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/kongfha/Desktop/SE/GitHubActionPractice
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-04-25T11:13:28.523Z] Using project from CLI flag: kongkong-18e8a
+[debug] [2024-04-25T11:13:28.524Z] > refreshing access token with scopes: []
+[debug] [2024-04-25T11:13:28.525Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-04-25T11:13:28.525Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-04-25T11:13:28.731Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-04-25T11:13:28.731Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-04-25T11:13:28.742Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kongkong-18e8a [none]
+[debug] [2024-04-25T11:13:29.174Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kongkong-18e8a 200
+[debug] [2024-04-25T11:13:29.174Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kongkong-18e8a {"projectId":"kongkong-18e8a","projectNumber":"89060813804","displayName":"KongKong","name":"projects/kongkong-18e8a","resources":{"hostingSite":"kongkong-18e8a"},"state":"ACTIVE","etag":"1_e7dacb05-6b3f-483e-a9d8-03e9f21bd8a6"}
+[info] i  Using project kongkong-18e8a (KongKong) 
+[info] 
+=== Hosting Setup
+[debug] [2024-04-25T11:13:29.185Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kongkong-18e8a [none]
+[debug] [2024-04-25T11:13:29.547Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kongkong-18e8a 200
+[debug] [2024-04-25T11:13:29.547Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kongkong-18e8a {"projectId":"kongkong-18e8a","projectNumber":"89060813804","displayName":"KongKong","name":"projects/kongkong-18e8a","resources":{"hostingSite":"kongkong-18e8a"},"state":"ACTIVE","etag":"1_e7dacb05-6b3f-483e-a9d8-03e9f21bd8a6"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] i  Skipping write of public/404.html 
+[debug] [2024-04-25T11:13:53.721Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-04-25T11:13:53.864Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-04-25T11:13:53.864Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.11.0","browserURL":"https://www.gstatic.com/firebasejs/10.11.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.11.0/firebase.tgz"},"live":{"version":"10.11","browserURL":"https://www.gstatic.com/firebasejs/live/10.11/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.11/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.11.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.11.0/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.11.0/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.11.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.11.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.11.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.11.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.11.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.11.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.11.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.11.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.memory.js"}}
+[debug] [2024-04-25T11:14:32.271Z] ----------------------------------------------------------------------
+[debug] [2024-04-25T11:14:32.273Z] Command:       /usr/local/bin/node /Users/kongfha/Desktop/SE/GitHubActionPractice/node_modules/.bin/firebase emulators:start
+[debug] [2024-04-25T11:14:32.273Z] CLI Version:   13.7.4
+[debug] [2024-04-25T11:14:32.273Z] Platform:      darwin
+[debug] [2024-04-25T11:14:32.273Z] Node Version:  v18.16.0
+[debug] [2024-04-25T11:14:32.274Z] Time:          Thu Apr 25 2024 18:14:32 GMT+0700 (Indochina Time)
+[debug] [2024-04-25T11:14:32.274Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-25T11:14:32.356Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-25T11:14:32.356Z] > authorizing via signed-in user (123459876azaz@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2024-04-25T11:14:32.552Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[warn] ⚠  hosting: Hosting Emulator unable to start on port 5000, starting on 5002 instead. {"metadata":{"emulator":{"name":"hosting"},"message":"Hosting Emulator unable to start on port 5000, starting on 5002 instead."}}
+[debug] [2024-04-25T11:14:32.552Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-25T11:14:32.552Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5002}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-04-25T11:14:32.557Z] [hub] writing locator at /var/folders/2m/my6rfccj2lqgy6_6y84lqwsw0000gn/T/hub-kongkong-18e8a.json
+[debug] [2024-04-25T11:14:32.566Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/kongkong-18e8a/sites 
+[debug] [2024-04-25T11:14:33.610Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/kongkong-18e8a/sites 200
+[debug] [2024-04-25T11:14:33.611Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/kongkong-18e8a/sites {"sites":[{"name":"projects/kongkong-18e8a/sites/kongkong-18e8a","defaultUrl":"https://kongkong-18e8a.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-04-25T11:14:33.611Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kongkong-18e8a/webApps/-/config [none]
+[debug] [2024-04-25T11:14:34.339Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kongkong-18e8a/webApps/-/config 200
+[debug] [2024-04-25T11:14:34.339Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kongkong-18e8a/webApps/-/config {"projectId":"kongkong-18e8a","storageBucket":"kongkong-18e8a.appspot.com","apiKey":"AIzaSyDcbou4NYZvMb4uTVc_6TUbHskp2sZNvvQ","authDomain":"kongkong-18e8a.firebaseapp.com","messagingSenderId":"89060813804"}
+[debug] [2024-04-25T11:14:34.352Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kongkong-18e8a [none]
+[debug] [2024-04-25T11:14:34.849Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kongkong-18e8a 200
+[debug] [2024-04-25T11:14:34.849Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kongkong-18e8a {"projectId":"kongkong-18e8a","projectNumber":"89060813804","displayName":"KongKong","name":"projects/kongkong-18e8a","resources":{"hostingSite":"kongkong-18e8a"},"state":"ACTIVE","etag":"1_e7dacb05-6b3f-483e-a9d8-03e9f21bd8a6"}
+[info] i  hosting[kongkong-18e8a]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting[kongkong-18e8a]: Local server: http://127.0.0.1:5002 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5002\u001b[22m\u001b[24m"}}
+[warn] ⚠  emulators: The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the running emulators have a UI component or the Emulator UI cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:5002 │
+└──────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [25/Apr/2024:11:14:50 +0000] "GET / HTTP/1.1" 200 371 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Apr/2024:11:14:50 +0000] \"GET / HTTP/1.1\" 200 371 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [25/Apr/2024:11:14:50 +0000] "GET /bundle.js HTTP/1.1" 200 - "http://127.0.0.1:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Apr/2024:11:14:50 +0000] \"GET /bundle.js HTTP/1.1\" 200 - \"http://127.0.0.1:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [25/Apr/2024:11:14:50 +0000] "GET /pug.jpg HTTP/1.1" 200 770433 "http://127.0.0.1:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Apr/2024:11:14:50 +0000] \"GET /pug.jpg HTTP/1.1\" 200 770433 \"http://127.0.0.1:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [25/Apr/2024:11:14:50 +0000] "GET /favicon.ico HTTP/1.1" 200 371 "http://127.0.0.1:5002/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [25/Apr/2024:11:14:50 +0000] \"GET /favicon.ico HTTP/1.1\" 200 371 \"http://127.0.0.1:5002/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0\""}}

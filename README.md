@@ -1,1 +1,1 @@
-# -GitHubActionPractice
+# GitHubActionPractice
